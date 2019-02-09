@@ -9,13 +9,15 @@ public class MiningExplotion : MonoBehaviour {
 	public GameObject BottomPiece;
 	public GameObject LeftPiece;
 	public GameObject RightPiece;
-
+    public GameObject ExplosionParticles;
 	public int destroyTime;
+    
 
 	void OnMouseDown()
     {
     MiddlePiece.SetActive(false);
 	TopPiece.SetActive(true);
+    Instantiate(ExplosionParticles, transform.position, transform.rotation);
 	if(TopPiece == true)
              {
                  Destroy(TopPiece, destroyTime);

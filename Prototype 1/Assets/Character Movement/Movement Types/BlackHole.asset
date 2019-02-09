@@ -9,12 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cebd28aac8a5dbc42ad33382766c3bb6, type: 3}
-  m_Name: RightPiece
+  m_Name: BlackHole
   m_EditorClassIdentifier: 
   gravity: {fileID: 11400000, guid: d7c42c6165abf4646a2eb6469d566e35, type: 2}
-  MoveX: {fileID: 11400000, guid: 709b4cff8f97ecf4da67b45c1ab2be88, type: 2}
+  MoveX: {fileID: 11400000, guid: d7c42c6165abf4646a2eb6469d566e35, type: 2}
   MoveY: {fileID: 11400000, guid: d7c42c6165abf4646a2eb6469d566e35, type: 2}
   MoveZ: {fileID: 11400000, guid: d7c42c6165abf4646a2eb6469d566e35, type: 2}
   RotX: {fileID: 11400000, guid: d7c42c6165abf4646a2eb6469d566e35, type: 2}
   RotY: {fileID: 11400000, guid: d7c42c6165abf4646a2eb6469d566e35, type: 2}
-  RotZ: {fileID: 11400000, guid: d7c42c6165abf4646a2eb6469d566e35, type: 2}
+  RotZ: {fileID: 11400000, guid: c5f4fe6b9bb05fe488e42c9cc11f895b, type: 2}

@@ -5,22 +5,35 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour {
         
         private CharacterController controller;
-        public MovePattern Pattern;
+        public MovePattern Current;
+        public MovePattern Fast;
+        public MovePattern Back;
+        public float PowerUpTime;
         
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        Current = Back;
     }
 
-    void Update() {
-            Pattern.Invoke(controller, transform);
-        }
+    void Update() 
+    {
+            Current.Invoke(controller, transform);
+    }
    void OnTriggerEnter
     (Collider other)
 {
     if (other.gameObject.CompareTag("PickUp"))
     {
         other.gameObject.SetActive(false);
+		Current = Fast;
+        StartCoroutine(Duration());
     }
 }
+    public IEnumerator Duration ()
+    {
+        yield return new WaitForSeconds (PowerUpTime);
+        Current = Back;
+    }
+
 }

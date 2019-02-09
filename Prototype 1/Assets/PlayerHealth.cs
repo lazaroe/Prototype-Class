@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
 
-	public GameObject[] HurtfulThings;
+    public GameObject Player;
 
-		void OnCollisionEnter (Collision HurtfulThings)
+
+		void OnCollision2D (Collision col)
     {  
         {
-            Destroy(HurtfulThings.gameObject);
+            Player.SetActive(false);
         }
     }
 }

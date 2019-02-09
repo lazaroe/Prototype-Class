@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 23285434717906978}
   - component: {fileID: 136425656222076914}
   - component: {fileID: 143308852383664626}
-  - component: {fileID: 114237310594681622}
+  - component: {fileID: 114269513503891778}
   m_Layer: 0
   m_Name: BlackHole
   m_TagString: Untagged
@@ -382,7 +382,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1606614302597628}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114237310594681622
+--- !u!114 &114269513503891778
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -390,7 +390,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1606614302597628}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff9f7056f32e0db4f9c6be977bc9ff63, type: 3}
+  m_Script: {fileID: 11500000, guid: c51dceaeb82897945bb619265dd0e50d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Pattern: {fileID: 11400000, guid: ba8d1f58da0d0c74794112026dc49327, type: 2}

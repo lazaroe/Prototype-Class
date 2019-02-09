@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: BottomPiece
   m_EditorClassIdentifier: 
   gravity: {fileID: 11400000, guid: d7c42c6165abf4646a2eb6469d566e35, type: 2}
-  MoveX: {fileID: 11400000, guid: 936bf77eebfbcef4896b8ac9c2852d90, type: 2}
-  MoveY: {fileID: 11400000, guid: d7c42c6165abf4646a2eb6469d566e35, type: 2}
+  MoveX: {fileID: 11400000, guid: d7c42c6165abf4646a2eb6469d566e35, type: 2}
+  MoveY: {fileID: 11400000, guid: 7dfa59d7a3dd11e458c40696fad48236, type: 2}
   MoveZ: {fileID: 11400000, guid: d7c42c6165abf4646a2eb6469d566e35, type: 2}
   RotX: {fileID: 11400000, guid: d7c42c6165abf4646a2eb6469d566e35, type: 2}
   RotY: {fileID: 11400000, guid: d7c42c6165abf4646a2eb6469d566e35, type: 2}

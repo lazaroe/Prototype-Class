@@ -16,6 +16,7 @@ public class HomingMissile : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
+
 	}
 	
 	void FixedUpdate () {
