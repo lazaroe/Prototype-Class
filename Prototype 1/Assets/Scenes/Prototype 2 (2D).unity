@@ -1341,10 +1341,12 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 164584440}
-    - target: {fileID: 1334272047114196, guid: a043a0cfd261d4442a74d2b3d3576109, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 114734363741327202, guid: a043a0cfd261d4442a74d2b3d3576109,
+        type: 2}
+      propertyPath: ExplosionEffect
+      value: 
+      objectReference: {fileID: 1058422413632652, guid: a5d845fd38585a940924c3e7bf259711,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a043a0cfd261d4442a74d2b3d3576109, type: 2}
   m_IsPrefabAsset: 0
