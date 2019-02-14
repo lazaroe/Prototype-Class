@@ -6,6 +6,7 @@ public class OpeningBarrier : MonoBehaviour {
 
     Renderer ColorBarrier;
     public GameObject Barrier;
+    public GameObject OverRide;
 
      void Start()
     {
@@ -14,6 +15,7 @@ public class OpeningBarrier : MonoBehaviour {
       void OnMouseDown()
     {
        ColorBarrier.material.color = Color.red;
+       Instantiate(OverRide, transform.position, transform.rotation);
        Barrier.SetActive(false);
     }
 }
