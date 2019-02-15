@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 50673992583080938}
   - component: {fileID: 70254321082039490}
   - component: {fileID: 114734363741327202}
+  - component: {fileID: 114540641950975484}
+  - component: {fileID: 114828635277338170}
   m_Layer: 0
   m_Name: Missile
   m_TagString: Enemy
@@ -37,8 +39,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1334272047114196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -26.2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -12.7, y: 10.6, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -78,6 +80,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.050430298, y: 0.49022365}
   m_Size: {x: 1.1364288, y: 3.9614587}
   m_Direction: 0
+--- !u!114 &114540641950975484
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334272047114196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5021fd8479d2522408c61aea6cd42896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 1
 --- !u!114 &114734363741327202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90,10 +104,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  ExplosionEffect: {fileID: 1074978023236396, guid: 8df47867d099beb4ea6fa607af387997,
+  ExplosionEffect: {fileID: 1058422413632652, guid: a5d845fd38585a940924c3e7bf259711,
     type: 2}
-  speed: 10
-  rotateSpeed: 50
+  speed: 20
+  rotateSpeed: 60
+--- !u!114 &114828635277338170
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1334272047114196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3a58e90fda81de4b91b25808085e339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targetIconOnScreen: {fileID: 21300000, guid: 26625d8ca7ae6364d95fcaac45ed6657,
+    type: 3}
+  m_targetIconOffScreen: {fileID: 21300000, guid: 586fcee050475af4994aa72a3c6fae2e,
+    type: 3}
+  m_edgeBuffer: 10
+  m_targetIconScale: {x: 0.3, y: 0.3, z: 0.3}
+  PointTarget: 1
+  ShowDebugLines: 0
 --- !u!212 &212891643461544162
 SpriteRenderer:
   m_ObjectHideFlags: 1

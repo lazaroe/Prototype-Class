@@ -550,7 +550,7 @@ MonoBehaviour:
   BottomPiece: {fileID: 1208572778376836}
   LeftPiece: {fileID: 1591085601566012}
   RightPiece: {fileID: 1244656172284452}
-  ExplosionParticles: {fileID: 1074978023236396, guid: 8df47867d099beb4ea6fa607af387997,
+  ExplosionParticles: {fileID: 1058422413632652, guid: a5d845fd38585a940924c3e7bf259711,
     type: 2}
   destroyTime: 2
 --- !u!114 &114941337833783690

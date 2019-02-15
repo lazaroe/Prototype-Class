@@ -87,8 +87,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4909913132012784}
   - component: {fileID: 212362800318213486}
-  - component: {fileID: 114778328417213360}
   - component: {fileID: 65173167199024122}
+  - component: {fileID: 114778328417213360}
   m_Layer: 0
   m_Name: shieldGen1
   m_TagString: Untagged
@@ -457,6 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Barrier: {fileID: 1089552927948598}
+  OverRide: {fileID: 1708507517733682, guid: 4ee71a2b10fb33f47a3dca1e385bb901, type: 2}
 --- !u!114 &114849235932079946
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -469,6 +470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Barrier: {fileID: 1857320586812566}
+  OverRide: {fileID: 1708507517733682, guid: 4ee71a2b10fb33f47a3dca1e385bb901, type: 2}
 --- !u!212 &212293395991872362
 SpriteRenderer:
   m_ObjectHideFlags: 1

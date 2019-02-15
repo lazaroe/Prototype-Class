@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class HomingMissile : MonoBehaviour {
 
-	public Transform target;
+	public GameObject target;
 	public GameObject ExplosionEffect;
 
 	public float speed = 5f;
@@ -16,11 +16,12 @@ public class HomingMissile : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
+		target = GameObject.FindWithTag("Player");
 
 	}
 	
 	void FixedUpdate () {
-		Vector2 direction = (Vector2)target.position - rb.position;
+		Vector2 direction = (Vector2)target.transform.position - rb.position;
 
 		direction.Normalize();
 
