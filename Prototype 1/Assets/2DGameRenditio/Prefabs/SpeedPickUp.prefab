@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4878512306667378}
   - component: {fileID: 212713179745154952}
-  - component: {fileID: 65664673620233932}
+  - component: {fileID: 135971299203524472}
   m_Layer: 0
   m_Name: SpeedPickUp
   m_TagString: PickUp
@@ -41,8 +41,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &65664673620233932
-BoxCollider:
+--- !u!135 &135971299203524472
+SphereCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -51,8 +51,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.0000002, y: 2.0000002, z: 0.20000003}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.8871714
+  m_Center: {x: 0.022565713, y: 0, z: 0}
 --- !u!212 &212713179745154952
 SpriteRenderer:
   m_ObjectHideFlags: 1

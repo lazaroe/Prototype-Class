@@ -11,6 +11,8 @@ public class Turret : MonoBehaviour {
 	public float fireRate = 2;
 	public float nextFire;
 
+	
+
 	void Start () {
 	nextFire = Time.time;
 	}
@@ -18,8 +20,8 @@ public class Turret : MonoBehaviour {
 	void Update () 
 	{
 	CheckIfTimeToFire ();
-	transform.right = target.position - transform.position;	
-	//transform.LookAt(target); .....works great for 3D
+	//transform.right = target.position - transform.position;	......works great for 2D
+	transform.LookAt(target); //.....works great for 3D
 	}
 
 	void CheckIfTimeToFire()
