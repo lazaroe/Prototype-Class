@@ -21,7 +21,9 @@ public class Turret : MonoBehaviour {
 	{
 	CheckIfTimeToFire ();
 	//transform.right = target.position - transform.position;	......works great for 2D
-	transform.LookAt(target); //.....works great for 3D
+	//transform.LookAt(target); //.....works great for 3D
+	 Vector3 targetPostition = new Vector3( target.position.x, this.transform.position.y, target.position.z ) ;
+ 	this.transform.LookAt( targetPostition ) ; //Rotate just for y
 	}
 
 	void CheckIfTimeToFire()
