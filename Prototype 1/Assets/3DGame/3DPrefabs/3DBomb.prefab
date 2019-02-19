@@ -63,6 +63,7 @@ GameObject:
   - component: {fileID: 23851272546175812}
   - component: {fileID: 114167750972798180}
   - component: {fileID: 64719992538914966}
+  - component: {fileID: 114996720995675036}
   m_Layer: 0
   m_Name: Asteroid Explotion
   m_TagString: Untagged
@@ -98,7 +99,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4616760712327546}
-  - component: {fileID: 114749760905816870}
   m_Layer: 0
   m_Name: 3DBomb
   m_TagString: Untagged
@@ -185,7 +185,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1954703496298986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.7, y: 3.5, z: 0.3}
+  m_LocalPosition: {x: 13.7, y: 8, z: 0.3}
   m_LocalScale: {x: 2.2997696, y: 2.2997696, z: 2.2997696}
   m_Children:
   - {fileID: 4548812624929744}
@@ -556,12 +556,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pattern: {fileID: 11400000, guid: 3e2b4d72264a5b2489ce9029d91ac819, type: 2}
---- !u!114 &114749760905816870
+--- !u!114 &114996720995675036
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1954703496298986}
+  m_GameObject: {fileID: 1744340022594412}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5021fd8479d2522408c61aea6cd42896, type: 3}
