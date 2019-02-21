@@ -7,6 +7,7 @@ public class HomingMissile : MonoBehaviour {
 
 	public GameObject target;
 	public GameObject ExplosionEffect;
+	public float explosionEffectTime = 1;
 
 	public float speed = 5f;
 	public float rotateSpeed = 200f;
@@ -34,7 +35,8 @@ public class HomingMissile : MonoBehaviour {
 
 	void OnTriggerEnter2D ()
 	{
-		Instantiate(ExplosionEffect, transform.position, transform.rotation);
+		GameObject clone = (GameObject) Instantiate (ExplosionEffect, transform.position, Quaternion.identity);
+				Destroy (clone, explosionEffectTime);
 		Destroy(gameObject);
 	}
 }

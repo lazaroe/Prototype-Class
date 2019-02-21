@@ -10,6 +10,7 @@ public class TargetIndicator : MonoBehaviour {
     private Vector3 m_cameraOffsetUp;
     private Vector3 m_cameraOffsetRight;
     private Vector3 m_cameraOffsetForward;
+    public GameObject MainObject;
     public Sprite m_targetIconOnScreen;
     public Sprite m_targetIconOffScreen;
     [Space]
@@ -23,6 +24,7 @@ public class TargetIndicator : MonoBehaviour {
     private bool m_outOfScreen;
     void Start()
     {
+        MainObject = GameObject.FindWithTag("Enemy");
         mainCamera = Camera.main;
         mainCanvas = FindObjectOfType<Canvas>();
         Debug.Assert((mainCanvas != null), "There needs to be a Canvas object in the scene for the OTI to display");
@@ -31,8 +33,12 @@ public class TargetIndicator : MonoBehaviour {
     void Update()
     {
         if (ShowDebugLines)
-            DrawDebugLines();
+        DrawDebugLines();
         UpdateTargetIconPosition();
+        if (MainObject = null)
+        {
+           GetComponent<TargetIndicator>().enabled = false;
+        }
     }
 
     

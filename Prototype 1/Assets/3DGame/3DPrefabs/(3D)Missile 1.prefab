@@ -357,6 +357,7 @@ MonoBehaviour:
   target: {fileID: 0}
   ExplosionEffect: {fileID: 1058422413632652, guid: a5d845fd38585a940924c3e7bf259711,
     type: 2}
+  explosionEffectTime: 2
   speed: 20
   rotateSpeed: 60
 --- !u!114 &114432453971021468
@@ -382,6 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a58e90fda81de4b91b25808085e339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MainObject: {fileID: 0}
   m_targetIconOnScreen: {fileID: 21300000, guid: 26625d8ca7ae6364d95fcaac45ed6657,
     type: 3}
   m_targetIconOffScreen: {fileID: 21300000, guid: 586fcee050475af4994aa72a3c6fae2e,
