@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class OpeningBarrier : MonoBehaviour {
 
-    Renderer ColorBarrier;
-    public GameObject Barrier;
+    Renderer ColorBarrier1;
+    public GameObject Barrier1;
     public GameObject OverRide;
+    public int OverRideTime = 1;
 
      void Start()
     {
-        ColorBarrier = GetComponent<Renderer>();
+        ColorBarrier1 = GetComponent<Renderer>();
     }
       void OnMouseDown()
     {
-       ColorBarrier.material.color = Color.red;
-       Instantiate(OverRide, transform.position, transform.rotation);
-       Barrier.SetActive(false);
+       ColorBarrier1.material.color = Color.red;
+       GameObject clone = (GameObject) Instantiate (OverRide, transform.position, Quaternion.identity);
+		   Destroy (clone, OverRideTime);
+       Barrier1.SetActive(true);
     }
 }

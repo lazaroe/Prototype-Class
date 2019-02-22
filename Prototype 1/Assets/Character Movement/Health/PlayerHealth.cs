@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour {
     
     public GameObject heart1, heart2, heart3, gameOver;
+    //public GameObject Fire;
+    //public int FireTime;
     public static int health;
     public GameObject Player;
 
@@ -27,16 +29,19 @@ public class PlayerHealth : MonoBehaviour {
             heart1.gameObject.SetActive (true);
             heart2.gameObject.SetActive (true);
             heart3.gameObject.SetActive (true);
+          
             break;
             case 2:
             heart1.gameObject.SetActive (true);
             heart2.gameObject.SetActive (true);
             heart3.gameObject.SetActive (false);
+
             break;
             case 1:
             heart1.gameObject.SetActive (true);
             heart2.gameObject.SetActive (false);
             heart3.gameObject.SetActive (false);
+            
             break;
             case 0:
             heart1.gameObject.SetActive (false);
@@ -47,5 +52,8 @@ public class PlayerHealth : MonoBehaviour {
             Time.timeScale = 0;
             break;
         }
+     
     }
 }
+//GameObject clone = (GameObject) Instantiate (Fire, transform.position, Quaternion.identity);
+//Destroy (clone, FireTime);

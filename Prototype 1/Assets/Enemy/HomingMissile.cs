@@ -36,7 +36,7 @@ public class HomingMissile : MonoBehaviour {
 	void OnTriggerEnter2D ()
 	{
 		GameObject clone = (GameObject) Instantiate (ExplosionEffect, transform.position, Quaternion.identity);
-				Destroy (clone, explosionEffectTime);
+		Destroy (clone, explosionEffectTime);
 		Destroy(gameObject);
 	}
 }

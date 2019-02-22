@@ -437,7 +437,7 @@ Transform:
   m_LocalScale: {x: 0.17699118, y: 0.17699116, z: 0.17699116}
   m_Children: []
   m_Father: {fileID: 4439319200995730}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 122.00099, y: 70.786995, z: 77.91499}
 --- !u!4 &4157534369177526
 Transform:
@@ -516,8 +516,8 @@ Transform:
   m_LocalPosition: {x: -8.9, y: -16.8, z: 0}
   m_LocalScale: {x: 5.65, y: 5.65, z: 5.65}
   m_Children:
-  - {fileID: 4126780929062424}
   - {fileID: 4975881453419852}
+  - {fileID: 4126780929062424}
   - {fileID: 4621339469845782}
   - {fileID: 4206570172781736}
   m_Father: {fileID: 0}
@@ -719,7 +719,7 @@ Transform:
   - {fileID: 4248922691743694}
   - {fileID: 4157534369177526}
   m_Father: {fileID: 4439319200995730}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4979887368454810
 Transform:
@@ -1951,6 +1951,8 @@ MonoBehaviour:
   heart2: {fileID: 0}
   heart3: {fileID: 0}
   gameOver: {fileID: 0}
+  Fire: {fileID: 1909940648571220, guid: c853b1d3af2e89e428e3b507a89920ca, type: 2}
+  FireTime: 2
   Player: {fileID: 1309153928738426}
 --- !u!143 &143153082385931668
 CharacterController:

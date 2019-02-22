@@ -6,24 +6,31 @@ public class Turret : MonoBehaviour {
 
 	[SerializeField]
 	GameObject bullet;
-	public Transform target;
+	public GameObject target;
+	public GameObject Flash;
+	public int FlashTime = 2;
 
 	public float fireRate = 2;
 	public float nextFire;
 
-	
+	void OnTriggerStay () 
+	{
+	CheckIfTimeToFire();
+	}
 
-	void Start () {
+	void Start () 
+	{
 	nextFire = Time.time;
+	target = GameObject.FindWithTag("Player");
 	}
 	
 	void Update () 
 	{
-	CheckIfTimeToFire ();
 	//transform.right = target.position - transform.position;	......works great for 2D
 	//transform.LookAt(target); //.....works great for 3D
-	 Vector3 targetPostition = new Vector3( target.position.x, this.transform.position.y, target.position.z ) ;
+	 Vector3 targetPostition = new Vector3( target.transform.position.x, this.transform.position.y, target.transform.position.z ) ;
  	this.transform.LookAt( targetPostition ) ; //Rotate just for y
+	
 	}
 
 	void CheckIfTimeToFire()
@@ -31,6 +38,8 @@ public class Turret : MonoBehaviour {
 		if (Time.time > nextFire) {
 			Instantiate (bullet, transform.position, Quaternion.identity);
 			nextFire = Time.time + fireRate;
+			GameObject clone = (GameObject) Instantiate (Flash, transform.position, Quaternion.identity);
+		Destroy (clone, FlashTime);
 		}
 		
 	}
