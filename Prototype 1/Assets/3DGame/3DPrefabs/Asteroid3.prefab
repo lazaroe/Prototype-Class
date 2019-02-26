@@ -36,6 +36,7 @@ GameObject:
   - component: {fileID: 4351395838456900}
   - component: {fileID: 33097811314114152}
   - component: {fileID: 23423897393009936}
+  - component: {fileID: 64061654091587130}
   m_Layer: 0
   m_Name: Asteroid3
   m_TagString: Untagged
@@ -43,16 +44,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1673449396077648
+--- !u!1 &1912904880863568
 GameObject:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4192986952439924}
-  - component: {fileID: 60646271301668032}
-  - component: {fileID: 114697881063113204}
+  - component: {fileID: 4530949526200502}
+  - component: {fileID: 60157233089238230}
+  - component: {fileID: 114309402542178932}
   m_Layer: 0
   m_Name: Missile Collider
   m_TagString: Untagged
@@ -60,19 +61,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4192986952439924
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1673449396077648}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.487, y: -0.051, z: -0.168}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4351395838456900}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4324250387468140
 Transform:
   m_ObjectHideFlags: 1
@@ -80,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1538549258976398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -32.42765, y: -97.14938, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4351395838456900}
@@ -97,8 +85,21 @@ Transform:
   m_LocalPosition: {x: 16.1, y: 0, z: 5.39}
   m_LocalScale: {x: 31.625996, y: 31.625996, z: 31.625996}
   m_Children:
-  - {fileID: 4192986952439924}
+  - {fileID: 4530949526200502}
   m_Father: {fileID: 4324250387468140}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4530949526200502
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1912904880863568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.487, y: -0.051, z: -0.168}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4351395838456900}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23423897393009936
@@ -143,12 +144,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1577330915210920}
   m_Mesh: {fileID: 4300000, guid: 9ec43a409ab2c1043b93a7cf8aa4261d, type: 3}
---- !u!60 &60646271301668032
+--- !u!60 &60157233089238230
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1673449396077648}
+  m_GameObject: {fileID: 1912904880863568}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -177,15 +178,29 @@ PolygonCollider2D:
       - {x: 0.122418106, y: -0.110750005}
       - {x: 0.1759867, y: -0.033164643}
       - {x: 0.12745962, y: 0.076261364}
---- !u!114 &114697881063113204
+--- !u!64 &64061654091587130
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1577330915210920}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 9ec43a409ab2c1043b93a7cf8aa4261d, type: 3}
+--- !u!114 &114309402542178932
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1673449396077648}
+  m_GameObject: {fileID: 1912904880863568}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5021fd8479d2522408c61aea6cd42896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 3
+  amount: 1

@@ -21,25 +21,9 @@ GameObject:
   - component: {fileID: 4263180786077894}
   - component: {fileID: 33116394440979350}
   - component: {fileID: 23986135629445178}
+  - component: {fileID: 64198500730703656}
   m_Layer: 0
   m_Name: Asteroid2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1158434000303082
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4081499531253994}
-  - component: {fileID: 60128509750154270}
-  - component: {fileID: 114712321461797156}
-  m_Layer: 0
-  m_Name: Missile Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,12 +44,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4081499531253994
+--- !u!1 &1828653032811286
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4054996696008338}
+  - component: {fileID: 60621318589179698}
+  - component: {fileID: 114443229344564452}
+  m_Layer: 0
+  m_Name: Missile Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4054996696008338
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1158434000303082}
+  m_GameObject: {fileID: 1828653032811286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.176}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -83,7 +84,7 @@ Transform:
   m_LocalPosition: {x: 0.8, y: 0, z: 7.6}
   m_LocalScale: {x: 43.89363, y: 43.89363, z: 43.89363}
   m_Children:
-  - {fileID: 4081499531253994}
+  - {fileID: 4054996696008338}
   m_Father: {fileID: 4948598867474566}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -94,7 +95,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368558136078910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.7785926, y: -58.608276, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4263180786077894}
@@ -143,12 +144,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1025709848785244}
   m_Mesh: {fileID: 4300008, guid: 9ec43a409ab2c1043b93a7cf8aa4261d, type: 3}
---- !u!60 &60128509750154270
+--- !u!60 &60621318589179698
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1158434000303082}
+  m_GameObject: {fileID: 1828653032811286}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -182,15 +183,29 @@ PolygonCollider2D:
       - {x: 0.13839778, y: -0.057192087}
       - {x: 0.15518637, y: -0.009364572}
       - {x: 0.11207707, y: 0.08616322}
---- !u!114 &114712321461797156
+--- !u!64 &64198500730703656
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1025709848785244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300008, guid: 9ec43a409ab2c1043b93a7cf8aa4261d, type: 3}
+--- !u!114 &114443229344564452
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1158434000303082}
+  m_GameObject: {fileID: 1828653032811286}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5021fd8479d2522408c61aea6cd42896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 3
+  amount: 1
