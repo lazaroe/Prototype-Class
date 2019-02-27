@@ -4167,8 +4167,12 @@ MonoBehaviour:
     count: 3
     rate: 3
   - name: Missiles
-    enemy: {fileID: 4779064734893850, guid: 01a85bea589924440a3e743bd2d58bfe, type: 2}
+    enemy: {fileID: 4433324336025638, guid: 077fd573e7d610a4a9a30a5a7d2ac22b, type: 2}
     count: 5
+    rate: 3
+  - name: Missiles
+    enemy: {fileID: 4983772120557214, guid: 4a9dd3b9e24bc954ea28fe5877dffb8e, type: 2}
+    count: 3
     rate: 3
   spawnPoints:
   - {fileID: 660973644}
