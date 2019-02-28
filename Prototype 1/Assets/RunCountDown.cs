@@ -6,13 +6,12 @@ public class RunCountDown : MonoBehaviour
 {
 
     private Text label;
+    public int number = 150;
     
     IEnumerator Start ()
     {
         {
         label = GetComponent<Text>();
-
-        int number = 3;
     
         while (number > 0)
         {
@@ -21,7 +20,7 @@ public class RunCountDown : MonoBehaviour
             number--;
         }
             yield return new WaitForSeconds(1);
-            label.text = "GO!";
+            label.text = "You Win!";
         }
     }
 }

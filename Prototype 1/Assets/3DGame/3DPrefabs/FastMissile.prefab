@@ -402,7 +402,7 @@ MonoBehaviour:
     type: 2}
   explosionEffectTime: 2
   speed: 40
-  rotateSpeed: 50
+  rotateSpeed: 40
 --- !u!212 &212963775381142478
 SpriteRenderer:
   m_ObjectHideFlags: 1
