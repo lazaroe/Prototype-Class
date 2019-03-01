@@ -30,12 +30,15 @@ public class PlayerHealth : MonoBehaviour {
             heart1.gameObject.SetActive (true);
             heart2.gameObject.SetActive (true);
             heart3.gameObject.SetActive (true);
+            Smoke.gameObject.SetActive (false);
           
             break;
             case 2:
             heart1.gameObject.SetActive (true);
             heart2.gameObject.SetActive (true);
             heart3.gameObject.SetActive (false);
+            Smoke.gameObject.SetActive (false);
+
 
             break;
             case 1:
@@ -43,6 +46,7 @@ public class PlayerHealth : MonoBehaviour {
             heart2.gameObject.SetActive (false);
             heart3.gameObject.SetActive (false);
             Smoke.gameObject.SetActive (true);
+            
             
             break;
             case 0:

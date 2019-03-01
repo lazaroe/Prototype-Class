@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class OpeningBarrier : MonoBehaviour {
 
-    Renderer ColorBarrier1;
+    public Renderer ColorBarrier1;
     public GameObject Barrier1;
     public GameObject OverRide;
-    public int OverRideTime = 1;
+    public int OverRideTime = 2;
 
      void Start()
     {
-        ColorBarrier1 = GetComponent<Renderer>();
+        ColorBarrier1 = gameObject.GetComponent<Renderer>();
     }
       void OnMouseDown()
     {

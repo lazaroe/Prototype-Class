@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  ExplosionEffect: {fileID: 1058422413632652, guid: a5d845fd38585a940924c3e7bf259711,
+  ExplosionEffect: {fileID: 1848972731374850, guid: ef7f637c7f43c9a4ca6dabf30661dd58,
     type: 2}
   explosionEffectTime: 2
   speed: 17
