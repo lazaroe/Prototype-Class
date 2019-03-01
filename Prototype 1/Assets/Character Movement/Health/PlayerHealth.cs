@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour {
     //public int FireTime;
     public static int health;
     public GameObject Player;
+    public GameObject Smoke;
 
     void Start ()
     {
@@ -41,6 +42,7 @@ public class PlayerHealth : MonoBehaviour {
             heart1.gameObject.SetActive (true);
             heart2.gameObject.SetActive (false);
             heart3.gameObject.SetActive (false);
+            Smoke.gameObject.SetActive (true);
             
             break;
             case 0:

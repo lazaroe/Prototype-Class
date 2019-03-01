@@ -380,7 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_targetIconOnScreen: {fileID: 21300000, guid: 26625d8ca7ae6364d95fcaac45ed6657,
     type: 3}
-  m_targetIconOffScreen: {fileID: 21300000, guid: 586fcee050475af4994aa72a3c6fae2e,
+  m_targetIconOffScreen: {fileID: 21300000, guid: 7cb6741b2434e484184bd6ebcecf6d79,
     type: 3}
   m_edgeBuffer: 10
   m_targetIconScale: {x: 0.3, y: 0.3, z: 0.3}
