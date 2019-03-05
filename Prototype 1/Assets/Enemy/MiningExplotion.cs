@@ -10,6 +10,7 @@ public class MiningExplotion : MonoBehaviour {
 	public GameObject LeftPiece;
 	public GameObject RightPiece;
     public GameObject ExplosionParticles;
+    public GameObject SmallExplotionParticles;
 	public int destroyTime;
     
 
@@ -21,6 +22,7 @@ public class MiningExplotion : MonoBehaviour {
 	if(TopPiece == true)
              {
                  Destroy(TopPiece, destroyTime);
+                 Instantiate(SmallExplotionParticles, TopPiece.transform.position, transform.rotation);
              }
 	BottomPiece.SetActive(true);
 	if(BottomPiece == true)

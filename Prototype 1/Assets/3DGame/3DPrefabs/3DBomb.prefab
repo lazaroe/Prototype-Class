@@ -1546,6 +1546,8 @@ MonoBehaviour:
   RightPiece: {fileID: 1971634321712322}
   ExplosionParticles: {fileID: 1256557473645916, guid: a822b95c46bf275478d24a34ce4b5bc3,
     type: 2}
+  SmallExplotionParticles: {fileID: 1848972731374850, guid: ef7f637c7f43c9a4ca6dabf30661dd58,
+    type: 2}
   destroyTime: 5
 --- !u!114 &114404746857359200
 MonoBehaviour:
