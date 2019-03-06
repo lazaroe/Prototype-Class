@@ -39,7 +39,7 @@ public class Turret : MonoBehaviour {
 			Instantiate (bullet, transform.position, Quaternion.identity);
 			nextFire = Time.time + fireRate;
 			GameObject clone = (GameObject) Instantiate (Flash, transform.position, Quaternion.identity);
-		Destroy (clone, FlashTime);
+			Destroy (clone, FlashTime);
 		}
 		
 	}
