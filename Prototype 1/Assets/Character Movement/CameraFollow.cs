@@ -70,3 +70,8 @@ namespace UnityStandardAssets._2D
 }
 
 
+// private int movingSpeed = 10f;
+ //void Update()
+ //{
+ //     transform.position += Vector3.right * Time.deltaTime * movingSpeed;
+ //{
