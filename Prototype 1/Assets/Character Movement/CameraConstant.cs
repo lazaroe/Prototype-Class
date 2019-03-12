@@ -6,32 +6,32 @@ public class CameraConstant : MonoBehaviour {
 
 	public Vector3 PlayerLocation;
     public GameObject Player;
-    public Vector3 CameraLocation;
-	private int movingSpeed = 10;
-
-	public Camera Cam;
+    public Vector3 EnemyLocation;
+    public GameObject Enemy;
+    //private EnemyMovement EnemyMove;
+    //public EnemyMoveBool IsMovingBool;
 
     private void Start()
     {
-       // EnemyMove = GetComponent<EnemyMovement>();
+       //EnemyMove = GetComponent<EnemyMovement>();
     }
 
     private void Update()
     {
-		CameraLocation = Cam.transform.position;
         PlayerLocation = Player.transform.position;
+        EnemyLocation = Enemy.transform.position;
        // if (IsMovingBool.EnemyisMoving == true)
         {
-            if (PlayerLocation.x < CameraLocation.x)
+            if (PlayerLocation.x < EnemyLocation.x)
 
             {
                 print("y");
             
-                //EnemyMove.characterSpeed = 0;
+               // EnemyMove.characterSpeed = 0;
             }
             else
             {
-      		transform.position += Vector3.right * Time.deltaTime * movingSpeed;
+               // EnemyMove.characterSpeed = 6;
             }
 
         }
