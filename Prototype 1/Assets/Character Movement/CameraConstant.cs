@@ -8,30 +8,38 @@ public class CameraConstant : MonoBehaviour {
     public GameObject Player;
     public Vector3 EnemyLocation;
     public GameObject Enemy;
-    //private EnemyMovement EnemyMove;
-    //public EnemyMoveBool IsMovingBool;
+    private CameraMovement EnemyMove;
+    public CharacterMovement PlayerSpeed;
+    
 
     private void Start()
     {
-       //EnemyMove = GetComponent<EnemyMovement>();
+       EnemyMove = GetComponent<CameraMovement>();
     }
 
     private void Update()
     {
         PlayerLocation = Player.transform.position;
         EnemyLocation = Enemy.transform.position;
-       // if (IsMovingBool.EnemyisMoving == true)
+       
         {
             if (PlayerLocation.x < EnemyLocation.x)
 
             {
                 print("y");
             
-               // EnemyMove.characterSpeed = 0;
+                EnemyMove.characterSpeed = 5;
             }
             else
             {
-               // EnemyMove.characterSpeed = 6;
+                if (PlayerLocation.x == EnemyLocation.x)
+                {
+                    EnemyMove.characterSpeed = 14;
+                }
+                if (PlayerLocation.x > EnemyLocation.x)
+                {
+                    EnemyMove.characterSpeed = 14;
+                }
             }
 
         }

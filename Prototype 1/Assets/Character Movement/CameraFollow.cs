@@ -1,8 +1,5 @@
 ﻿using System;
 using UnityEngine;
-
-namespace UnityStandardAssets._2D
-{
     public class CameraFollow : MonoBehaviour
     {
         public Transform target;
@@ -12,7 +9,6 @@ namespace UnityStandardAssets._2D
         public float lookAheadMoveThreshold = 0.1f;
         public float yPosRestriction = -1;
         public float yyPosRestriction = -1;
-        public float CameraSpeed = 5;
         private float m_OffsetZ;
         private Vector3 m_LastTargetPosition;
         private Vector3 m_CurrentVelocity;
@@ -54,7 +50,6 @@ namespace UnityStandardAssets._2D
             Vector3 newPos = Vector3.SmoothDamp(transform.position, aheadTargetPos, ref m_CurrentVelocity, damping);
 
             newPos = new Vector3 (newPos.x, Mathf.Clamp (yyPosRestriction, yPosRestriction, Mathf.Infinity), newPos.z); //newPos.y
-            transform.Translate(CameraSpeed, 0, 0);
 
             transform.position = newPos;
             
@@ -72,7 +67,6 @@ namespace UnityStandardAssets._2D
             }
         }
     }
-}
 
 
 // private int movingSpeed = 10f;
