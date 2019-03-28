@@ -3595,28 +3595,28 @@ MonoBehaviour:
   sounds:
   - name: Alarm
     clip: {fileID: 8300000, guid: f58fde502ac6d554c9df4097c96daabe, type: 3}
-    volume: 0.546
-    pitch: 0.573
+    volume: 0.1
+    pitch: 1.5
     randomVolume: 0
     randomPitch: 0.016
-    loop: 1
+    loop: 0
   - name: Music
     clip: {fileID: 8300000, guid: cdd29f653a45a8d499cdc144cb202916, type: 3}
-    volume: 0.424
+    volume: 0.4
     pitch: 0.5
     randomVolume: 0
     randomPitch: 0.016
     loop: 1
-  - name: Explotion
-    clip: {fileID: 8300000, guid: 00c9da29c7f44ad459d25332a8500a9e, type: 3}
-    volume: 0.662
+  - name: PowerUp
+    clip: {fileID: 8300000, guid: d5a414a3886f120429ea9e7aa963eb46, type: 3}
+    volume: 0.36
     pitch: 0.5
     randomVolume: 0
     randomPitch: 0.016
     loop: 0
-  - name: Missile
-    clip: {fileID: 8300000, guid: a47eeafc6ed302b478d39963d4233590, type: 3}
-    volume: 0.257
+  - name: HeartPickUp
+    clip: {fileID: 8300000, guid: 01bdb4cd33db4ea419043a29f891f7ba, type: 3}
+    volume: 0.36
     pitch: 0.5
     randomVolume: 0
     randomPitch: 0.016
