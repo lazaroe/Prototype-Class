@@ -21,6 +21,7 @@ public class RunCountDown : MonoBehaviour
         }
             yield return new WaitForSeconds(1);
             label.text = "You Win!";
+            Time.timeScale = 0;
         }
     }
 }
