@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 64465861225175530}
   - component: {fileID: 143153082385931668}
   - component: {fileID: 114169390854872846}
+  - component: {fileID: 82974596880000172}
   m_Layer: 0
   m_Name: Spaceship model
   m_TagString: Player
@@ -696,7 +697,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1309153928738426}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.70710677}
   m_LocalPosition: {x: -8.9, y: -16.8, z: 0}
   m_LocalScale: {x: 5.65, y: 5.65, z: 5.65}
   m_Children:
@@ -708,7 +709,7 @@ Transform:
   - {fileID: 4085519393459466}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!4 &4441635188860154
 Transform:
   m_ObjectHideFlags: 1
@@ -1886,6 +1887,101 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300020, guid: 83d66f0d97734fb46a3d94cd428f5c62, type: 3}
+--- !u!82 &82974596880000172
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1309153928738426}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 2abf3c22fbb686e44a1af8241b3f5d69, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.704
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 136
+  DopplerLevel: 1
+  MinDistance: 5
+  MaxDistance: 15
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!96 &96541893775099730
 TrailRenderer:
   serializedVersion: 2
@@ -2121,8 +2217,10 @@ MonoBehaviour:
   Current: {fileID: 11400000, guid: 6f8ab9d763be9ec459737b1456136373, type: 2}
   Fast: {fileID: 11400000, guid: 9a5d32ba78c13054eb225fba6e33a070, type: 2}
   Back: {fileID: 11400000, guid: 6f8ab9d763be9ec459737b1456136373, type: 2}
+  Slow: {fileID: 11400000, guid: bab1c309dacf44a4dbb75ec0d854886a, type: 2}
   FastParticles: {fileID: 1499658007156286}
   PowerUpTime: 5
+  SlowDownTime: 3
 --- !u!114 &114507944014938964
 MonoBehaviour:
   m_ObjectHideFlags: 1

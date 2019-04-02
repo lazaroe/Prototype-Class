@@ -14,8 +14,9 @@ public class HomingMissile : MonoBehaviour {
 
 	private Rigidbody2D rb;
 
-	// Use this for initialization
-	void Start () {
+	
+	void Start () 
+	{
 		rb = GetComponent<Rigidbody2D>();
 		target = GameObject.FindWithTag("Player");
 

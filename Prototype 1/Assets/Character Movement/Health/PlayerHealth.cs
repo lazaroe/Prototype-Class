@@ -10,9 +10,16 @@ public class PlayerHealth : MonoBehaviour {
     public static int health;
     public GameObject Player;
     public GameObject Smoke;
+    AudioManager audioManager;
 
     void Start ()
     {
+        audioManager = AudioManager.instance;
+		if (audioManager == null)
+		{
+			Debug.LogError("FREAK OUT! No AudioManager found in the scene.");
+		}
+
         health = 3;
         heart1.gameObject.SetActive (true);
         heart2.gameObject.SetActive (true);
@@ -31,9 +38,11 @@ public class PlayerHealth : MonoBehaviour {
             heart2.gameObject.SetActive (true);
             heart3.gameObject.SetActive (true);
             Smoke.gameObject.SetActive (false);
+            
           
             break;
             case 2:
+            audioManager.PlaySound("Alarm");
             heart1.gameObject.SetActive (true);
             heart2.gameObject.SetActive (true);
             heart3.gameObject.SetActive (false);
@@ -42,6 +51,7 @@ public class PlayerHealth : MonoBehaviour {
 
             break;
             case 1:
+        
             heart1.gameObject.SetActive (true);
             heart2.gameObject.SetActive (false);
             heart3.gameObject.SetActive (false);

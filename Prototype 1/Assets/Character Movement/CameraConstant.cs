@@ -26,7 +26,6 @@ public class CameraConstant : MonoBehaviour {
             if (PlayerLocation.x < EnemyLocation.x)
 
             {
-                print("y");
             
                 EnemyMove.characterSpeed = 5;
             }

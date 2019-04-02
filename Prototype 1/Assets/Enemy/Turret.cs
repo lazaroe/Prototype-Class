@@ -12,6 +12,7 @@ public class Turret : MonoBehaviour {
 
 	public float fireRate = 2;
 	public float nextFire;
+	AudioManager audioManager;
 
 	void OnTriggerStay () 
 	{
@@ -20,6 +21,11 @@ public class Turret : MonoBehaviour {
 
 	void Start () 
 	{
+		audioManager = AudioManager.instance;
+		if (audioManager == null)
+		{
+			Debug.LogError("FREAK OUT! No AudioManager found in the scene.");
+		}
 	nextFire = Time.time;
 	target = GameObject.FindWithTag("Player");
 	}
@@ -40,6 +46,7 @@ public class Turret : MonoBehaviour {
 			nextFire = Time.time + fireRate;
 			GameObject clone = (GameObject) Instantiate (Flash, transform.position, Quaternion.identity);
 			Destroy (clone, FlashTime);
+			audioManager.PlaySound("CannonShot");
 		}
 		
 	}
