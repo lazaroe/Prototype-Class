@@ -43,4 +43,4 @@ public class HomingMissile : MonoBehaviour {
 }
 
 
-	
+	//works only for 2D

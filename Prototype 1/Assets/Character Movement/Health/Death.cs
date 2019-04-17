@@ -12,6 +12,13 @@ public class Death : MonoBehaviour {
 		PlayerHealth.health -= amount;
 		}
 	}
+	void OnTriggerEnter (Collider col)
+	{
+		if (col.gameObject.tag.Equals ("Player"))
+		{
+		PlayerHealth.health = amount;
+		}
+	}
 	void OnCollisionEnter (Collision collision)
 	{
 		if (collision.gameObject.tag.Equals ("Player"))

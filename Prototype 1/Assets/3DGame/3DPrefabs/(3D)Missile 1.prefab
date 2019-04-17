@@ -358,7 +358,7 @@ MonoBehaviour:
   ExplosionEffect: {fileID: 1395763895694036, guid: e4f72f61ab8e5144f8de331d87583b63,
     type: 2}
   explosionEffectTime: 2
-  speed: 20
+  speed: 25
   rotateSpeed: 60
 --- !u!114 &114432453971021468
 MonoBehaviour:
