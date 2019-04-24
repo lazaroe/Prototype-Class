@@ -7,12 +7,14 @@ public class RunCountDown : MonoBehaviour
 
     private Text label;
     public int number = 150;
+
+    public GameObject WinMenu;
     
     IEnumerator Start ()
     {
         {
         label = GetComponent<Text>();
-    
+
         while (number > 0)
         {
             yield return new WaitForSeconds(1);
@@ -22,6 +24,7 @@ public class RunCountDown : MonoBehaviour
             yield return new WaitForSeconds(1);
             label.text = "You Win!";
             Time.timeScale = 0;
+            WinMenu.gameObject.SetActive (true);
         }
     }
 }
