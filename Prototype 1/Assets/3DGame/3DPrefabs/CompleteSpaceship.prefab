@@ -4423,6 +4423,9 @@ MonoBehaviour:
   DeadBody: {fileID: 1588511704127748}
   Smoke: {fileID: 1240494185064156}
   HideDetails: {fileID: 0}
+  ExplosionEffect: {fileID: 1256557473645916, guid: a822b95c46bf275478d24a34ce4b5bc3,
+    type: 2}
+  explosionEffectTime: 1
 --- !u!114 &114378106184840106
 MonoBehaviour:
   m_ObjectHideFlags: 1

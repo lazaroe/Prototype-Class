@@ -27,17 +27,17 @@ public class CameraConstant : MonoBehaviour {
 
             {
             
-                EnemyMove.characterSpeed = 5;
+                EnemyMove.characterSpeed = 6;
             }
             else
             {
                 if (PlayerLocation.x == EnemyLocation.x)
                 {
-                    EnemyMove.characterSpeed = 19;
+                    EnemyMove.characterSpeed = 22;
                 }
                 if (PlayerLocation.x > EnemyLocation.x)
                 {
-                    EnemyMove.characterSpeed = 19;
+                    EnemyMove.characterSpeed = 22;
                 }
             }
 

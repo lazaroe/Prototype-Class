@@ -8432,9 +8432,23 @@ MonoBehaviour:
     randomVolume: 0
     randomPitch: 0.016
     loop: 0
+  - name: SuperExplotion
+    clip: {fileID: 8300000, guid: 5306b595e2dfa2941b5a0ff0dbce8fad, type: 3}
+    volume: 0.8
+    pitch: 0.5
+    randomVolume: 0
+    randomPitch: 0.016
+    loop: 0
   - name: CannonShot
     clip: {fileID: 8300000, guid: 3f7293a3ab8eeda41b7d829c908253f9, type: 3}
     volume: 0.36
+    pitch: 0.5
+    randomVolume: 0
+    randomPitch: 0.016
+    loop: 0
+  - name: Scratch
+    clip: {fileID: 8300000, guid: a70495f37176d764383b03f8ab542a18, type: 3}
+    volume: 0.21
     pitch: 0.5
     randomVolume: 0
     randomPitch: 0.016

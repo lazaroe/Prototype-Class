@@ -13,6 +13,8 @@ public class PlayerHealth : MonoBehaviour {
     public GameObject Smoke;
     AudioManager audioManager;
     public GameObject HideDetails;
+    public GameObject ExplosionEffect;
+    public float explosionEffectTime = 1;
 
     void Start ()
     {
@@ -79,12 +81,13 @@ public class PlayerHealth : MonoBehaviour {
             heart4.gameObject.SetActive (false);
             Player.gameObject.SetActive(false);
             DeadBody.gameObject.SetActive(true);
+            GameObject clone = (GameObject) Instantiate (ExplosionEffect, transform.position, Quaternion.identity);
+		    Destroy (clone, explosionEffectTime);
             Time.timeScale = .2f;
-            
+            audioManager.PlaySound("SuperExplotion");
             HideDetails.gameObject.SetActive(false);
             break;
         }
-     
     }
 }
 //GameObject clone = (GameObject) Instantiate (Fire, transform.position, Quaternion.identity);
